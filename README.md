@@ -51,7 +51,7 @@ All endpoints are hosted at: [https://assingmenteducaseindia.onrender.com/](http
 - **Response**:
   
 - **201 created**: If the school is successfully added.
-- **500 BAD Request**:  If any field is missing or invalid.
+- **400 BAD Request**:  If any field is missing or invalid.
 
 
 ### 2. List School
@@ -64,7 +64,7 @@ All endpoints are hosted at: [https://assingmenteducaseindia.onrender.com/](http
 
 - **Response**:
   - **200 OK**: Returns a sorted list of schools based on proximity.
-  - **500 Bad Request**: If any query parameter is missing or invalid.
+  - **400 Bad Request**: If any query parameter is missing or invalid.
 
 
  ## Hostinh and Testing
