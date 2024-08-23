@@ -64,7 +64,7 @@ All endpoints are hosted at: [https://assingmenteducaseindia.onrender.com/](http
 
 - **Response**:
   - **200 OK**: Returns a sorted list of schools based on proximity.
-  - **400 Bad Request**: If any query parameter is missing or invalid.
+  - **500 Bad Request**: If any query parameter is missing or invalid.
 
 
  ## Hostinh and Testing
