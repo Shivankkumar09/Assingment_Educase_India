@@ -8,7 +8,7 @@ const addSchool = async (req, res) => {
 
     const { name, address, latitude, longitude } = req.body;
 
-     const validation = validateData(req.body);
+     const validation = await validateData(req.body);
 
     if (!validation.valid) {
         return res.status(400).json({ error: validation.error });
