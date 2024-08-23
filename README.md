@@ -75,7 +75,7 @@ All endpoints are hosted at: [https://assingmenteducaseindia.onrender.com/](http
 ## Postman Collection
 collection Link:-
 
-https://api.postman.com/collections/36729152-8bae325d-7bdd-49a1-93a0-c0d340bfe339?access_key=PMAT-01J5Z413WER3VAQ2YXHEE9KBA7
+https://elements.getpostman.com/redirect?entityId=36729152-8bae325d-7bdd-49a1-93a0-c0d340bfe339&entityType=collection
 
    You can use the Postman collection to test these APIs easily. The collection includes example requests and expected responses.
  
