@@ -1,5 +1,4 @@
 
-
 const validateData = (data) => {
     const { name, address, latitude, longitude } = data;
 

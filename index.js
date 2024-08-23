@@ -1,18 +1,14 @@
 const express = require('express');
 const dotenv = require('dotenv');
-const mysql = require('mysql2');
-const schoolRoutes = require('./routes/schoolRoutes');
-
 const {setupDatabase} = require('./dbConn');
+const router = require('./routes/schoolRoutes');
 
 dotenv.config();
 
 const app = express();
 app.use(express.json());
 
-
-
-app.use('/api', schoolRoutes);
+app.use('/api', router);
 
 
 setupDatabase().then(() => {

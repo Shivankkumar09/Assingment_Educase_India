@@ -7,10 +7,7 @@ const connector = mysql.createPool({
   host: process.env.DATABASE_HOST,
   user: process.env.DATABASE_USER,
   password: process.env.DATABASE_PASSWORD,
-  database: process.env.DATABASE_NAME,
-  waitForConnections: true,
-  connectionLimit: 10,
-  queueLimit: 0
+  database: process.env.DATABASE_NAME
 });
 
 const setupDatabase = async () => {
@@ -35,7 +32,7 @@ const setupDatabase = async () => {
       )`);
       console.log("Table created or already exists");
 
-      await connection.end(); // Close the initial connection
+      await connection.end(); 
   } catch (err) {
       console.error("Database setup error:", err.message);
   }
