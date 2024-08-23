@@ -58,15 +58,13 @@ All endpoints are hosted at: [https://assingmenteducaseindia.onrender.com/](http
 
 - **Endpoint**: `[GET] /api/listSchools`
 - **Description**: Retrieves a list of schools sorted by proximity to the user's location based on the Haversine distance.
-- **Query Parameter**:-
-  latitude(required): User's latitude.
-  longitude(required): User's longitude.
+- **Query Parameters**:
+  - `latitude` (required): User's latitude.
+  - `longitude` (required): User's longitude.
 
 - **Response**:
-  
-- **200 OK**: Returns a sorted list of schools based on proximity.
-- **400 BAD Request**: If any query parameter is missing or invalid.
-
+  - **200 OK**: Returns a sorted list of schools based on proximity.
+  - **400 Bad Request**: If any query parameter is missing or invalid.
 
 
  ## Hostinh and Testing
