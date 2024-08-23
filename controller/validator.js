@@ -44,18 +44,10 @@ const validateData = async (data) => {
             // Check if latitude and longitude are the same using an epsilon value
             if (Math.abs(parseFloat(existingSchool.latitude) - parseFloat(latitude)) < epsilon &&
                 Math.abs(parseFloat(existingSchool.longitude) - parseFloat(longitude)) < epsilon) {
-               // console.log('Validation failed: School with the same name and location already exists');
                 return { valid: false, error: 'School with the same name and location already exists' };
             }
         }
 
-        // If validation passes, insert the new school into the database
-        await connector.execute(
-            'INSERT INTO schools (name, address, latitude, longitude) VALUES (?, ?, ?, ?)',
-            [name, address, latitude, longitude]
-        );
-
-        // console.log('School successfully added to the database');
         return { valid: true };
     } catch (error) {
         console.error('Database error:', error.message);
