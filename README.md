@@ -31,6 +31,9 @@ A `schools` table in MySQL has been created with the following fields:
 
 ## API Endpoints
 
+All endpoints are hosted at: [https://assingmenteducaseindia.onrender.com/](https://assingmenteducaseindia.onrender.com/)
+
+
 ### 1. Add School
 
 - **Endpoint**: `[POST] /api/addSchool`
@@ -42,5 +45,36 @@ A `schools` table in MySQL has been created with the following fields:
     "name": "School Name",
     "address": "School Address",
     "latitude": 12.9715987,
-    "longitude": 77.594566"
+    "longitude": 77.594566
   }
+
+- **Response**:
+  
+- **201 created**: If the school is successfully added.
+- **400 BAD Request**:  If any field is missing or invalid.
+
+
+### 2. List School
+
+- **Endpoint**: `[GET] /api/listSchools`
+- **Description**: Retrieves a list of schools sorted by proximity to the user's location based on the Haversine distance.
+- **Query Parameter**:-
+- **latitude**(required): User's latitude.
+- **longitude**(required): User's longitude.
+
+- **Response**:
+  
+- **200 OK**: Returns a sorted list of schools based on proximity.
+- **400 BAD Request**: If any query parameter is missing or invalid.
+
+
+
+ ## Hostinh and Testing
+
+ - **Hosting**: The API is hosted on Render.com and can be accessed via the following base URL: https://assingmenteducaseindia.onrender.com/
+
+
+## Postman Collection
+
+   You can use the Postman collection to test these APIs easily. The collection includes example requests and expected responses.
+ 
