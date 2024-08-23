@@ -71,7 +71,7 @@ All endpoints are hosted at: [https://assingmenteducaseindia.onrender.com/](http
   - **400 Bad Request**: If any query parameter is missing or invalid.
 
 
- ## Hostinh and Testing
+ ## Hosting and Testing
 
  - **Hosting**: The API is hosted on Render.com and can be accessed via the following base URL: https://assingmenteducaseindia.onrender.com/
 
