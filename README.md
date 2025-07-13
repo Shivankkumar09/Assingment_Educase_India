@@ -31,13 +31,11 @@ A `schools` table in MySQL has been created with the following fields:
 
 ## API Endpoints
 
-All endpoints are hosted at: [https://assingmenteducaseindia.onrender.com/](https://assingmenteducaseindia.onrender.com/)
-
 
 ### 1. Add School
 
 - **Endpoint**: `[POST] /api/addSchool`
-- **URL**: https://assingmenteducaseindia.onrender.com/api/addSchool
+- **URL**: /api/addSchool
 - **Description**: Adds a new school to the database after validating the provided data.
 - **Payload**:
 
@@ -58,13 +56,13 @@ All endpoints are hosted at: [https://assingmenteducaseindia.onrender.com/](http
 ### 2. List School
 
 - **Endpoint**: `[GET] /api/listSchools`
-- **URL**: https://assingmenteducaseindia.onrender.com/api/listSchools
+- **URL**: /api/listSchools
 - **Description**: Retrieves a list of schools sorted by proximity to the user's location based on the Haversine distance.
 - **Query Parameters**:
   - `latitude` (required): User's latitude.
   - `longitude` (required): User's longitude.
 
- - **Example URL**: http://assingmenteducaseindia.onrender.com/api/listSchools?latitude=22.7041&longitude=70.1025 
+ - **Example URL**: /api/listSchools?latitude=22.7041&longitude=70.1025 
 
 - **Response**:
   - **200 OK**: Returns a sorted list of schools based on proximity.
